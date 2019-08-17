@@ -1,0 +1,840 @@
+body {
+	FONT-FAMILY: "Lato", arial, sans-serif;
+	font-size: 11px;
+	BACKGROUND: #F4F4F4;
+	color: #1D2626;
+	margin: 0px auto;
+	width: 1000px;
+}
+
+.wrapper {
+	height: auto;
+	width: 970px;
+	background: #ffffff;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: left;
+}
+
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Lato Regular'), local('Lato-Regular'),
+		url(http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff)
+		format('woff');
+}
+
+/* Common Tag Styles */
+
+p {
+	font-size: 13px;
+	font-weight: normal;
+	font-family: "Lato", arial, sans-serif;
+	float: left;
+	padding: 0px;
+	margin: 0px;
+}
+
+p label {
+	font-weight: bold;
+}
+
+p.boldLetter {
+	font-weight: bold;
+}
+
+p.newPara {
+	float: left;
+	width: 930px;
+	margin-left: 40px;
+}
+
+p.centerText {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+img {
+	border: 0;
+}
+
+h1,h2,h3 {
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	font-size: 28px;
+	font-weight: normal;
+	font-family: "Lato", arial, sans-serif;
+}
+
+h2 {
+	font-family: "Lato", arial, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	width: 100%;
+    clear: both;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+h3 {
+	font-size: 15px;
+	font-weight: bold;
+	font-family: "Lato", arial, sans-serif;
+	float: left;
+}
+
+UL {
+	margin: 0px;
+	padding: 0px;
+}
+
+UL,LI {
+	vertical-align: middle;
+	list-style-image: none;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+ol {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+ol li {
+	vertical-align: middle;
+	list-style-type: decimal;
+	margin-left: 24px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 0px;
+}
+
+table th,td {
+	padding: 0px;
+	margin: 0px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+/* Class Style for Header*/
+
+.globalHead {
+	background: #ffffff;
+	height: 40px;
+	width: 970px;
+	float: left;
+}
+
+.logoImage {
+	float: left;
+	vertical-align: middle;
+	background: #ffffff;
+	height: 16px;
+	min-width: 20%;
+	margin: 11px
+}
+
+.logo {
+	height: 16px;
+	cursor: pointer;
+}
+
+.linkHolder {
+	float: right;
+	margin-top: 11px;
+	padding-right: 4px;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 11px;
+	width: 70%;
+}
+
+.globalLinks {
+	margin-left: 22px;
+	color: #555555;
+	text-decoration: none;
+	float: right;
+}
+
+.headerContent {
+	background-image: url('../images/HeaderBack.jpg');
+	min-height: 70px;
+	width: 970px;
+	float: left;
+}
+
+.frameHeaderContent {
+	background: url('../images/HeaderBack.jpg') top right;
+	min-height: 70px;
+	width: 100%;
+	background-color: #428CB9;
+	background-repeat: repeat-y;
+	float: left;
+}
+
+.siteType {
+	float: right;
+	width: auto;
+	position: relative;
+}
+
+.description {
+	float: left;
+	width: 74%;
+	margin: 11px;
+	vertical-align: middle;
+}
+
+.bookTitle {
+	font-family: "Lato", arial, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	color: #ffffff;
+	float: left;
+	width: 100%;
+}
+
+.bookAuthor {
+	font-family: "Lato", arial, sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+	color: #ffffff;
+	float: left;
+	width: 100%;
+}
+
+/* Class Style for Footer*/
+
+.globalFooter {
+	float: left;
+	width: 100%;
+	height: 62px;
+	background-color: #ffffff;
+	border-top: 1px solid #B2B2B2;
+}
+
+.logoFooter {
+	text-align: right;
+	margin: 20px;
+	padding: 0;
+	height: 22px;
+}
+
+.globalFooter p {
+	float: left;
+	margin: 11px;
+	font: 12px/40px Arial, sans-serif;
+	color: #555555;
+}
+
+.globalFooter p a {
+	text-decoration: none;
+	color: #555555;
+}
+
+.globalFooter p a:hover {
+	text-decoration: underline;
+	color: #222222;
+}
+
+
+/* Class Style for main body*/
+
+.mainContent {
+	float: left;
+	Height: auto;
+	min-height: 350px;
+	Width: 100%;
+	background: #ffffff;
+	padding-top: 25px; /*30px;*/
+	padding-bottom: 40px
+}
+
+.leftContent {
+	float: left;
+	Height: auto;
+	Width: 720px;
+}
+
+
+.leftContent table,th,td {
+	border: 0px;
+}
+
+.leftContent td {
+	text-align: left;
+	height: 30px;
+	padding-right: 15px;
+	vertical-align: middle;
+}
+
+.rightContent {
+	float: right;
+	Height: auto;
+	Width: 220px;
+}
+
+.rightContent .relatedSite table tr td p {
+	border-top: 1px solid #DBDBDB;
+	float: right;
+	height: auto;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	width: 220px;
+}
+
+.bookImage {
+	float: left;
+	height: auto;
+	width: 300px;
+	margin-bottom: 20px;
+}
+
+.bookIntro {
+	float: right;
+	height: auto;
+	width: 390px;
+	margin-left: 30px;
+}
+
+.getHelpSite {
+	height: auto;
+	float: left;
+	border-top: 1px solid #cccccc;
+	padding-bottom: 15px;
+	width: 100%;
+}
+
+.sideLinks {
+	font-size: 12px;
+	font-weight: bold;
+	color: #1032C9;
+	line-height: 18px;
+}
+
+.sideColumnElements {
+	float: left;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.smallerSubHead {
+	FONT-FAMILY: "Lato", arial, sans-serif;
+	font-size: 14px;
+	float: left;
+	width: 100%;
+	font-weight: bold;
+	color: #1032C9;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.smallerSubHead a {
+	color: #1032C9;
+}
+
+.smallerSubHead span {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 25px;
+}
+
+.smallerSubHead p {
+	color: #1D2626;
+	font-weight: bold;
+	width: 100%;
+}
+
+.smallerSubHead table tr td p {
+	color: #1D2626;
+	font-weight: normal;
+	width: 100%;
+}
+
+.smallerSubHead ul li {
+	border-bottom: 1px solid #dbdbdb;
+	color: #1D2626;
+	float: left;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-top: 20px;
+	width: 100%;
+}
+
+.smallerSubHead table tr td p b {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+	width: 100%;
+}
+
+.bottomHead {
+	FONT-FAMILY: "Lato", arial, sans-serif;
+	font-size: 12px;
+	font-weight: regular;
+	color: #1032C9;
+}
+
+.subHead {
+	FONT-FAMILY: "Lato", arial, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	width: 100%;
+	float: left;
+}
+
+.middleContent {
+	height: auto;
+	float: left;
+	width: 100%;
+}
+
+.middleContent ul li:nth-child(2)
+{
+	margin-left:30px;
+}
+
+.middleContent ul li:nth-child(3)
+{
+	margin-left:30px;
+}
+.bottomContent {
+	height: auto;
+	float: left;
+	width: 100%;
+}
+
+.partnerSite {
+	float: left;
+	height: auto;
+	border-top: 1px solid #cccccc;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.partnerSite hr {
+	border-width: 0px;
+	background-color: #DBDBDB;
+    height: 1px;
+}
+
+.relatedSite {
+	float: left;
+	height: auto;
+	width: 100%;
+}
+
+.strongDivider {
+	border-top: 3px solid #B2B2B2;
+	height: 0px;
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.lightDivider {
+	border-top: 1px solid #CCCCCC;
+	height: 0px;
+	float: left;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.subordinateText {
+	float: left;
+	color: #888888;
+	font-size: 11px;
+	font-weight: normal;
+	margin-top: 0px;
+}
+
+/*.middleElementDiv {
+	height: auto;
+	float: left;
+	border-bottom: 1px solid #dbdbdb;
+	border-top: 3px solid #dbdbdb;
+	margin-top: 29px;
+}*/
+
+.subTitle {
+	padding-top: 8px;
+	float: left;
+	width: 100%;
+	padding-bottom: 8px;
+}
+
+.subTitle span {
+	font-size: 16px;
+}
+
+.bodyText {
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.bodyText a {
+	color: #1032C9;
+}
+
+.bodyText p {
+	width: 100%;
+}
+
+.bodyText h3 {
+	background: #3c8ab8;
+	width: 99.5%;
+	color: #ffffff;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 0.5%;
+	margin: 5px 0px;
+}
+
+.bodyText h3 span {
+	text-align: middle;
+	font-weight: normal;
+}
+
+/* .bodyCopy p {
+	padding-bottom: 5px;
+	padding-top: 5px;
+} */
+
+.mainHeader {
+	float: left;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.bodyContent {
+	float: left;
+	font-size: 13px;
+}
+
+.bodyContent p {
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.bodyContent ul {
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bodyContent ul li {
+    clear: both;
+    list-style-type: disc;
+    margin-left: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.bodyContent a{
+    color: #1032C9;
+}
+
+.chapterTitle {
+	float: left;
+	Width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.chapterTitle a {
+	color: #1032C9;
+}
+
+.materialHolder {
+	margin-top: 10px;
+	float: left;
+	width: 100%;
+	height: auto;
+}
+
+.materialHolder ul {
+	float: left;
+	height: auto;
+	padding-bottom: 10px;
+}
+
+.materialHolder li {
+	vertical-align: middle;
+	width: 100%;
+	float: left;
+	line-Height: 20px;
+	list-style-image: none;
+	padding-left: 10px;
+}
+
+.materialHolder .listBullet {
+	vertical-align: middle;
+	padding-left: 2px;
+	float: left;
+	padding-top: 7px;
+	padding-right: 5px;
+}
+
+.materialHolder li a {
+	color: #1032C9;
+	float: left;
+}
+
+.materialHolder ul li {
+	
+}
+
+.mostLeftColumn {
+	float: left;
+	width: 220px;
+	height: auto;
+	background-color: #ffffff;
+}
+
+.middleLeftColumn {
+	float: left;
+	width: 470px;
+	height: auto;
+	background-color: #ffffff;
+	margin-Left: 30px;
+}
+
+.middleRightContent {
+	float: right;
+	Height: auto;
+	Width: 220px;
+}
+
+/* Style For Gold Buttons */
+
+.buttonHolder {
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*.multiButtonHolder {
+	float: left;
+	Width: 230px;
+	text-align: right;
+	margin-left: 50px;
+	margin-right: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}*/
+
+.goldBotton {
+	background-color: #ECA608;
+	border-radius: 4px 4px 4px 4px;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15), 0 -1px 0 #CD8007 inset;
+	color: #FFFFFF;
+	cursor: default;
+	float: left;
+	padding: 4px 14px;
+	text-decoration: none !important;
+	font: Lato Black;
+	font-size: 12px;
+	font-weight: bold;
+	border-radius: 4px;
+}
+
+.goldBotton:hover {
+	background-color: #DE9507;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, .3), 0px -1px 0px #BD7502 inset;
+}
+
+.goldBotton:active {
+	background-color: #CD8007;
+	box-shadow: 1px 2px 2px rgba(0, 0, 0, .3) inset;
+}
+
+/* Style For Purchase Pages */
+
+.paymentLogo {
+	margin-left: 35px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	argin-right: 10px;
+	float: left;
+	width: 930px;
+}
+
+.purchaseArea {
+	float: left;
+	width: 360px;
+	margin-left: 35px;
+}
+
+.purchaseArea ol {
+	margin-top: 10px;
+	margin-left: 50px;
+	margin-bottom: 10px;
+	padding: 0px;
+}
+
+.purchaseArea ol li {
+	vertical-align: middle;
+	list-style-type: decimal;
+	margin: 0px;
+	padding: 0px;
+	font-family: "Lato", arial, sans-serif;
+	font-size: 13px;
+}
+
+.purchaseArea th {
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+.purchaseArea td {
+	text-align: left;
+	margin: 10px;
+	padding: 0px;
+	vertical-align: top;
+}
+
+.purchaseArea td .titlecard {
+	text-align: right;
+}
+
+.regCode {
+	clear: both;
+	float: left;
+	margin-bottom: 19px;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.styleList ul li {
+	vertical-align: middle;
+	list-style-image: none;
+	list-style-type: square;
+	margin-left: 15px;
+	padding: 0px;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+/* Style For Correct Fonts in tr td structure */
+
+.bookIntro table tbody tr td p {
+	font-size: 13px;
+	font-weight: normal;
+	font-family: 'Lato', arial, sans-serif;
+}
+
+.bookIntro table tbody tr td ol {
+	font-size: 13px;
+	font-weight: normal;
+	font-family: 'Lato', arial, sans-serif;
+}
+
+.bookIntro table tbody tr td ol br {
+	display: none;
+}
+
+.grayHighliter{
+	background-color: #f4f4f4;
+}
+
+/* Style For Registration pages */
+
+.redStar {
+	color: red;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.registrationContent {
+	width: 100%;
+	float: left;
+	clear: both;
+}
+
+.registrationContent table {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+	/*margin-left: -15px;*/
+}
+
+.registrationContent table p {
+	margin-left: 10px;
+	vertical-align: top;
+}
+
+.registrationContent table tr td {
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+	height: 35px;
+	vertical-align: middle;
+	border: 0px;
+	font-size: 13px;
+	font-weight: bold;
+	position: relative;
+}
+
+.registrationContent .bodyText p {
+	margin-left: 10px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	width:auto;
+}
+
+.registrationContent  input[type="text"] {
+	width: 250px;
+	background-color: #ffffff;
+	border: 1px solid #b2b2b2;
+}
+
+.registrationContent  input[type="password"] {
+	width: 250px;
+	background-color: #ffffff;
+	border: 1px solid #b2b2b2;
+}
+
+.registrationContent  input[type="radio"] {
+	padding: 0px;
+	margin: 0px;
+}
+
+.registrationContent  select {
+	width: 360px;
+	background-color: #ffffff;
+	border: 1px solid #b2b2b2;
+}
+
+.registrationContent  ul li {
+	float: left;
+	width: 100%;
+}
+
+.registrationContent .listBullet {
+	vertical-align: middle;
+	padding-left: 2px;
+	padding-right: 5px;
+}
+
+.titlecard {
+	font-size: 13px;
+}
